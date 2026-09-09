@@ -151,7 +151,7 @@ qq = Vfs / (2**(B - 1))
 xx_q = np.round(senal_ruidosa / qq) * qq
 nq = xx_q - senal_ruidosa
 
-k = 0.1 # factor de potencia del ruido (=10)
+k = 0.1 # (=10) factor de potencia del ruido
 Pq = (qq**2)/12 # potencia teorica del ruido
 Pn = k * Pq
 
