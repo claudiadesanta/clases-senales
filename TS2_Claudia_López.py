@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Sep  9 16:59:49 2026
-
-@author: claud
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -40,11 +33,11 @@ px = np.var(xx)
 print(px)
 
 # aquí comento grafica sin ruido
-#tt, xx = mi_funcion_sen(vmax = math.sqrt(2))
-#plt.plot(tt, xx)
-#plt.xlabel('Tiempo[seg]')
-#plt.ylabel('Amplitud [V]')
-#plt.show()
+tt, xx = mi_funcion_sen(vmax = math.sqrt(2))
+plt.plot(tt, xx)
+plt.xlabel('Tiempo[seg]')
+plt.ylabel('Amplitud [V]')
+plt.show()
 
 snr_db = 10  # evaluar diferentes niveles de SNR
 snr_lineal = 10 ** (snr_db / 10)  # convertir dB a escala lineal (10log)
